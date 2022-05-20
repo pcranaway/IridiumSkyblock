@@ -1,19 +1,13 @@
 package com.iridium.iridiumskyblock.listeners;
 
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
+import com.cryptomorin.xseries.XMaterial;
 import com.iridium.iridiumcore.utils.StringUtils;
 import com.iridium.iridiumskyblock.IridiumSkyblock;
 import com.iridium.iridiumskyblock.PermissionType;
 import com.iridium.iridiumskyblock.api.IridiumSkyblockAPI;
 import com.iridium.iridiumskyblock.database.*;
 import org.bukkit.block.CreatureSpawner;
-import org.bukkit.block.data.Ageable;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.entity.Hanging;
-import org.bukkit.entity.ItemFrame;
-import org.bukkit.entity.Painting;
-import org.bukkit.entity.Player;
-import org.bukkit.entity.Projectile;
+import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -50,15 +44,15 @@ public class BlockBreakListener implements Listener {
         XMaterial material = XMaterial.matchXMaterial(event.getBlock().getType());
 
         user.getIsland().ifPresent(island -> {
-            BlockData blockData = event.getBlock().getBlockData();
-            if (blockData instanceof Ageable) {
-                Ageable ageable = (Ageable) blockData;
-                if (ageable.getAge() == ageable.getMaximumAge()) {
-                    IridiumSkyblock.getInstance().getMissionManager().handleMissionUpdates(island, "MINE", material.name(), 1);
-                }
-            } else {
-                IridiumSkyblock.getInstance().getMissionManager().handleMissionUpdates(island, "MINE", material.name(), 1);
-            }
+            byte blockData = event.getBlock().getData();
+//            if (blockData instanceof Ageable) {
+//                Ageable ageable = (Ageable) blockData;
+//                if (ageable.getAge() == ageable.getMaximumAge()) {
+//                    IridiumSkyblock.getInstance().getMissionManager().handleMissionUpdates(island, "MINE", material.name(), 1);
+//                }
+//            } else {
+//                IridiumSkyblock.getInstance().getMissionManager().handleMissionUpdates(island, "MINE", material.name(), 1);
+//            }
 
             IslandBooster islandBooster = IridiumSkyblock.getInstance().getIslandManager().getIslandBooster(island, "experience");
             if (islandBooster.isActive()) {

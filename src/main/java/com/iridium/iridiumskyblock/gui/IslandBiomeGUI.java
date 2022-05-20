@@ -1,6 +1,6 @@
 package com.iridium.iridiumskyblock.gui;
 
-import com.iridium.iridiumcore.dependencies.xseries.XBiome;
+import com.cryptomorin.xseries.XBiome;
 import com.iridium.iridiumcore.utils.InventoryUtils;
 import com.iridium.iridiumcore.utils.ItemStackUtils;
 import com.iridium.iridiumcore.utils.Placeholder;

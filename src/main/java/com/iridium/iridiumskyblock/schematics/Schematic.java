@@ -1,7 +1,6 @@
 package com.iridium.iridiumskyblock.schematics;
 
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
-import org.bukkit.Bukkit;
+import com.cryptomorin.xseries.XMaterial;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.block.Chest;
@@ -43,7 +42,8 @@ public class Schematic implements SchematicPaster {
                     for (String blockData : schematicData.palette.keySet()) {
                         int i = SchematicData.getChildTag(schematicData.palette, blockData, IntTag.class).getValue();
                         if (schematicData.blockdata[index] == i) {
-                            block.setBlockData(Bukkit.createBlockData(blockData), false);
+                            // TODO: fix this
+                            block.setData(Byte.parseByte(blockData), false);
                         }
                     }
                 }

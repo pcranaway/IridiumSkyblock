@@ -1,6 +1,6 @@
 package com.iridium.iridiumskyblock.configs;
 
-import com.iridium.iridiumcore.dependencies.fasterxml.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Arrays;
 import java.util.List;

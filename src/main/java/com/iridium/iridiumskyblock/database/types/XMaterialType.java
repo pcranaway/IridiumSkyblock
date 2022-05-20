@@ -1,9 +1,10 @@
 package com.iridium.iridiumskyblock.database.types;
 
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
+import com.cryptomorin.xseries.XMaterial;
 import com.j256.ormlite.field.FieldType;
 import com.j256.ormlite.field.SqlType;
 import com.j256.ormlite.field.types.StringType;
+
 import java.sql.SQLException;
 import java.util.Optional;
 

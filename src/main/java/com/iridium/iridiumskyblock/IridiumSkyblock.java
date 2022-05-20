@@ -1,10 +1,9 @@
 package com.iridium.iridiumskyblock;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.iridium.iridiumcore.Color;
 import com.iridium.iridiumcore.IridiumCore;
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
 import com.iridium.iridiumcore.utils.NumberFormatter;
-import com.iridium.iridiumskyblock.api.IridiumSkyblockAPI;
 import com.iridium.iridiumskyblock.api.IridiumSkyblockReloadEvent;
 import com.iridium.iridiumskyblock.bank.BankItem;
 import com.iridium.iridiumskyblock.commands.CommandManager;

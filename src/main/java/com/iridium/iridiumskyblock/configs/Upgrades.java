@@ -1,9 +1,9 @@
 package com.iridium.iridiumskyblock.configs;
 
+import com.cryptomorin.xseries.XMaterial;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.google.common.collect.ImmutableMap;
 import com.iridium.iridiumcore.Item;
-import com.iridium.iridiumcore.dependencies.fasterxml.annotation.JsonIgnoreProperties;
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
 import com.iridium.iridiumskyblock.Upgrade;
 import com.iridium.iridiumskyblock.upgrades.*;
 

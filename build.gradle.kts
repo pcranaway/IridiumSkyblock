@@ -15,45 +15,51 @@ repositories {
     maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
     maven("https://ci.ender.zone/plugin/repository/everything/")
     maven("https://jitpack.io")
-    maven("https://nexus.iridiumdevelopment.net/repository/maven-releases/")
     maven("https://papermc.io/repo/repository/maven-public/")
     maven("https://repo.rosewooddev.io/repository/public/")
     maven("https://hub.jeff-media.com/nexus/repository/jeff-media-public/")
+    maven("https://maven.sk89q.com/repo/")
+    maven("https://repo.codemc.org/repository/maven-public/")
+    maven("https://redempt.dev")
 }
 
 dependencies {
     // Dependencies that we want to shade in
     implementation("org.jetbrains:annotations:23.0.0")
-    implementation("com.iridium:IridiumCore:1.6.6")
     implementation("org.bstats:bstats-bukkit:3.0.0")
-    implementation("com.github.Redempt:Crunch:1.0.0")
+//    implementation("com.github.Redempt:Crunch:1.0.0")
     implementation("com.j256.ormlite:ormlite-core:6.1")
     implementation("com.j256.ormlite:ormlite-jdbc:6.1")
     implementation("de.jeff_media:SpigotUpdateChecker:1.3.0")
 
     // Other dependencies that are not required or already available at runtime
     compileOnly("org.projectlombok:lombok:1.18.22")
-    compileOnly("org.spigotmc:spigot-api:1.18-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.12-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot:1.12.2")
     compileOnly("net.ess3:EssentialsXSpawn:2.16.1")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7")
     compileOnly("me.clip:placeholderapi:2.9.2")
     compileOnly("be.maximvdw:MVdWPlaceholderAPI:2.1.1-SNAPSHOT") {
         exclude("org.spigotmc")
     }
-    compileOnly("com.gc:AdvancedSpawners:1.2.6")
     compileOnly("dev.rosewood:rosestacker:1.4.2")
     compileOnly("com.github.OmerBenGera:WildStackerAPI:master")
-    compileOnly("com.songoda:UltimateStacker:2.1.7")
-    compileOnly("com.songoda:EpicSpawners:7.0.8")
-    compileOnly("com.sk89q:WorldEdit:7.2.6")
-
+//    compileOnly("com.gc:AdvancedSpawners:1.2.6")
+//    compileOnly("com.github.songoda:UltimateStacker:master-SNAPSHOT")
+//    compileOnly("com.github.songoda:EpicSpawners:master-SNAPSHOT")
+    compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.6")
+    implementation("de.tr7zw:item-nbt-api:2.9.2")
+    implementation("org.jetbrains:annotations:22.0.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.13.1")
+    implementation("com.fasterxml.jackson.core:jackson-core:2.13.1")
+    implementation("com.fasterxml.jackson.core:jackson-annotations:2.13.1")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.1")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.1")
+    implementation("org.yaml:snakeyaml:1.29")
+    implementation("com.github.cryptomorin:XSeries:8.7.1")
+    implementation("com.github.Redempt:Crunch:1.1.2")
     // Enable lombok annotation processing
     annotationProcessor("org.projectlombok:lombok:1.18.22")
-
-    // Test dependencies
-    testImplementation(platform("org.junit:junit-bom:5.7.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
-    testImplementation("com.github.seeseemelk:MockBukkit-v1.18:1.24.1")
 }
 
 tasks {
@@ -98,13 +104,13 @@ tasks {
     }
 
     compileJava {
-        sourceCompatibility = JavaVersion.VERSION_1_8.toString()
-        targetCompatibility = JavaVersion.VERSION_1_8.toString()
+        sourceCompatibility = JavaVersion.VERSION_11.toString()
+        targetCompatibility = JavaVersion.VERSION_11.toString()
     }
 
     compileTestJava {
-        sourceCompatibility = JavaVersion.VERSION_17.toString()
-        targetCompatibility = JavaVersion.VERSION_17.toString()
+        sourceCompatibility = JavaVersion.VERSION_11.toString()
+        targetCompatibility = JavaVersion.VERSION_11.toString()
     }
 }
 

@@ -1,7 +1,7 @@
 package com.iridium.iridiumskyblock.configs;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.iridium.iridiumcore.Color;
-import com.iridium.iridiumcore.dependencies.fasterxml.annotation.JsonIgnoreProperties;
 
 import java.util.HashMap;
 import java.util.Map;

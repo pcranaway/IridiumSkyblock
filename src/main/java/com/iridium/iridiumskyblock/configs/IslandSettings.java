@@ -1,8 +1,8 @@
 package com.iridium.iridiumskyblock.configs;
 
+import com.cryptomorin.xseries.XMaterial;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.iridium.iridiumcore.Item;
-import com.iridium.iridiumcore.dependencies.fasterxml.annotation.JsonIgnoreProperties;
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
 import com.iridium.iridiumskyblock.IslandTime;
 import com.iridium.iridiumskyblock.IslandWeatherType;
 import com.iridium.iridiumskyblock.Setting;

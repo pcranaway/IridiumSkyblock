@@ -1,6 +1,6 @@
 package com.iridium.iridiumskyblock.utils;
 
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
+import com.cryptomorin.xseries.XMaterial;
 import com.iridium.iridiumcore.multiversion.MultiVersion;
 import com.iridium.iridiumskyblock.IridiumSkyblock;
 import com.iridium.iridiumskyblock.database.Island;
@@ -91,7 +91,7 @@ public class LocationUtils {
      * @return The lowest AIR location.
      */
     public static int getMinHeight(World world) {
-        return XMaterial.getVersion() >= 17 ? world.getMinHeight() : 0;  // World#getMinHeight() -> Available only in 1.17 Spigot and 1.16.5 PaperMC
+        return 0;
     }
 
 }

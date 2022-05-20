@@ -3,7 +3,7 @@ package com.iridium.iridiumskyblock.support;
 import com.bgsoftware.wildstacker.api.WildStackerAPI;
 import com.bgsoftware.wildstacker.api.objects.StackedBarrel;
 import com.bgsoftware.wildstacker.api.objects.StackedSpawner;
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
+import com.cryptomorin.xseries.XMaterial;
 import com.iridium.iridiumskyblock.IridiumSkyblock;
 import com.iridium.iridiumskyblock.database.Island;
 import com.iridium.iridiumskyblock.database.IslandBlocks;

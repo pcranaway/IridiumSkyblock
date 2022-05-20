@@ -2,10 +2,10 @@ package com.iridium.iridiumskyblock.utils;
 
 import com.earth2me.essentials.Essentials;
 import com.earth2me.essentials.spawn.EssentialsSpawn;
-import com.iridium.iridiumcore.dependencies.paperlib.PaperLib;
 import com.iridium.iridiumskyblock.IridiumSkyblock;
 import com.iridium.iridiumskyblock.database.Island;
 import com.iridium.iridiumskyblock.database.IslandBank;
+import io.papermc.lib.PaperLib;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

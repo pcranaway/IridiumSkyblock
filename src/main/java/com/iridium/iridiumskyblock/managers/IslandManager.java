@@ -1,11 +1,8 @@
 package com.iridium.iridiumskyblock.managers;
 
+import com.cryptomorin.xseries.XBiome;
+import com.cryptomorin.xseries.XMaterial;
 import com.google.common.collect.ImmutableMap;
-import com.iridium.iridiumcore.dependencies.nbtapi.NBTCompound;
-import com.iridium.iridiumcore.dependencies.nbtapi.NBTItem;
-import com.iridium.iridiumcore.dependencies.paperlib.PaperLib;
-import com.iridium.iridiumcore.dependencies.xseries.XBiome;
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
 import com.iridium.iridiumcore.utils.ItemStackUtils;
 import com.iridium.iridiumcore.utils.Placeholder;
 import com.iridium.iridiumcore.utils.StringUtils;
@@ -20,6 +17,9 @@ import com.iridium.iridiumskyblock.database.*;
 import com.iridium.iridiumskyblock.generators.OceanGenerator;
 import com.iridium.iridiumskyblock.utils.LocationUtils;
 import com.iridium.iridiumskyblock.utils.PlayerUtils;
+import de.tr7zw.changeme.nbtapi.NBTCompound;
+import de.tr7zw.changeme.nbtapi.NBTItem;
+import io.papermc.lib.PaperLib;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
@@ -864,7 +864,7 @@ public class IslandManager {
                     if (island.isInIsland(x + (chunk.getX() * 16), z + (chunk.getZ() * 16))) {
                         final int maxy = Math.min(maxHeight, chunk.getHighestBlockYAt(x, z));
                         for (int y = LocationUtils.getMinHeight(world); y <= maxy; y++) {
-                            XMaterial material = XMaterial.matchXMaterial(chunk.getBlockType(x, y, z));
+                            XMaterial material = XMaterial.matchXMaterial(chunk.getBlockTypeId(x, y, z), (byte) 0).orElse(null);
                             if (material == XMaterial.AIR) continue;
                             if (!ignoreMainMaterial && material == IridiumSkyblock.getInstance().getChunkGenerator().getMainMaterial(world)) continue;
 

@@ -28,8 +28,9 @@ public class WorldEdit implements SchematicPaster {
     public static boolean isWorking()
     {
         final Platform platform = com.sk89q.worldedit.WorldEdit.getInstance().getPlatformManager().queryCapability(Capability.WORLD_EDITING);
-        int liveDataVersion = platform.getDataVersion();
+        int liveDataVersion = Integer.parseInt(platform.getVersion());
 
+        // TOOD: probably not working
         return liveDataVersion != -1;
     }
     

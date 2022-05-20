@@ -1,7 +1,7 @@
 package com.iridium.iridiumskyblock.database;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.iridium.iridiumcore.Color;
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
 import com.iridium.iridiumskyblock.Cache;
 import com.iridium.iridiumskyblock.DatabaseObject;
 import com.iridium.iridiumskyblock.IridiumSkyblock;

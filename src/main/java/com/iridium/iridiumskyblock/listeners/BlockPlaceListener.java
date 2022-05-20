@@ -1,6 +1,6 @@
 package com.iridium.iridiumskyblock.listeners;
 
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
+import com.cryptomorin.xseries.XMaterial;
 import com.iridium.iridiumcore.utils.StringUtils;
 import com.iridium.iridiumskyblock.IridiumSkyblock;
 import com.iridium.iridiumskyblock.PermissionType;
@@ -18,7 +18,6 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 
-import java.util.Objects;
 import java.util.Optional;
 
 public class BlockPlaceListener implements Listener {

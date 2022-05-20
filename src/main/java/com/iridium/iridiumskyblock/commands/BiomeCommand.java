@@ -1,6 +1,6 @@
 package com.iridium.iridiumskyblock.commands;
 
-import com.iridium.iridiumcore.dependencies.xseries.XBiome;
+import com.cryptomorin.xseries.XBiome;
 import com.iridium.iridiumcore.utils.StringUtils;
 import com.iridium.iridiumskyblock.IridiumSkyblock;
 import com.iridium.iridiumskyblock.database.Island;

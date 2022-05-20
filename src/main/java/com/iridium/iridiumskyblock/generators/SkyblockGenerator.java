@@ -1,6 +1,6 @@
 package com.iridium.iridiumskyblock.generators;
 
-import com.iridium.iridiumcore.dependencies.xseries.XMaterial;
+import com.cryptomorin.xseries.XMaterial;
 import org.bukkit.World;
 import org.bukkit.generator.BlockPopulator;
 import org.jetbrains.annotations.NotNull;
